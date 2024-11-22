@@ -588,9 +588,12 @@
   }
   
   .e-learning .profile-img {
-      width: 100px; /* Adjust as needed */
-      height: 100px; /* Adjust as needed */
-      margin-right: 15px; /* Space between image and text */
+    width: 190px; /* Sesuaikan ukuran yang diinginkan */
+    height: 150px; /* Sesuaikan ukuran yang diinginkan */
+    margin: 0 auto; /* Menghilangkan margin kanan dan menempatkan gambar di tengah */
+    display: block;
+}
+
   }
   
   .e-learning .el-content {
@@ -631,9 +634,12 @@
 }
 
 .e-learning .profile-img {
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-    margin-bottom: 15px; /* Space between image and text */
+  width: 150px; /* Sesuaikan ukuran yang diinginkan */
+  height: 150px; /* Sesuaikan ukuran yang diinginkan */
+  margin: 0 auto; /* Menghilangkan margin kanan dan menempatkan gambar di tengah */
+  display: block;
+}
+
 }
 
 .e-learning .el-content {
@@ -677,10 +683,12 @@
 }
 
 .e-learning .profile-img {
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
-  margin-bottom: 15px; /* Space between image and text */
+  width: 150px; /* Sesuaikan ukuran yang diinginkan */
+  height: 150px; /* Sesuaikan ukuran yang diinginkan */
+  margin: 0 auto; /* Menghilangkan margin kanan dan menempatkan gambar di tengah */
+  display: block;
 }
+
 
 .e-learning .el-content {
   display: flex;
@@ -714,3 +722,52 @@
 .rainbow-text .letter11 { color: green; }
 .rainbow-text .letter12 { color: blue; }
 .rainbow-text .letter13 { color: indigo; }
+
+
+/* Gambar profile di tengah dan ukuran yang konsisten */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Pengaturan Flexbox pada el-item untuk memastikan semua di tengah */
+.el-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+/* Pastikan konten juga berada di tengah */
+.el-content {
+  text-align: center;
+}
+
+.isi-berita {
+  font-family: Arial, sans-serif;
+}
+
+.judul-berita {
+  font-size: 32px; /* Ukuran teks lebih besar untuk judul */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.paragraf-berita {
+  font-size: 18px; /* Ukuran teks yang lebih besar */
+  line-height: 1.6; /* Jarak antar baris yang lebih nyaman dibaca */
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.card-img-left {
+  width: 100%; /* Pastikan gambar menggunakan lebar penuh kontainernya */
+  height: 200px; /* Tentukan tinggi konsisten untuk semua gambar */
+  object-fit: cover; /* Pastikan gambar menyesuaikan area tanpa distorsi */
+}
